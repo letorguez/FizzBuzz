@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fizzbuzz.example.FizzBuzzTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-03-28T08:03:27" hostname="LETO-PC" time="0.028">
+  <properties/>
+  <testcase name="shouldReturnANumber()" classname="fizzbuzz.example.FizzBuzzTest" time="0.022"/>
+  <testcase name="shouldReturnBuzz()" classname="fizzbuzz.example.FizzBuzzTest" time="0.001"/>
+  <testcase name="shouldReturnFizz()" classname="fizzbuzz.example.FizzBuzzTest" time="0.001"/>
+  <testcase name="shouldReturnList()" classname="fizzbuzz.example.FizzBuzzTest" time="0.0"/>
+  <testcase name="shouldReturnFizzBuzz()" classname="fizzbuzz.example.FizzBuzzTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
