@@ -9,27 +9,30 @@ public class FizzBuzz {
 
     }
 
-    public List<String> changeNumbers(List<Integer> numbers) {
-        List<String> result = new ArrayList<String>();
+    public ListTextNumbers changeNumbers(ListNumbers numbers) {
+        ListTextNumbers result = new ListTextNumbers();
 
-        for (int number : numbers) {
+        for (Number number : numbers.getNumbers()) {
             result.add(checkNumber(number));
         }
 
         return result;
     }
 
-
-    public String checkNumber(int number) {
-        String result = "";
-        if (number % 3 == 0) {
-            result += "Fizz";
+    public TextNumber checkNumber(Number number) {
+        TextNumber result = new TextNumber("");
+        if (number.isMultiple(3)) {
+            result.addText("Fizz");
         }
-        if (number % 5 == 0) {
-            result += "Buzz";
+        if (number.isMultiple(5)) {
+            result.addText("Buzz");
         }
-        if (result == "") {
-            result += number;
+        if (result.isEmpty()) {
+            String numberText = number.toString();
+            result.addText(numberText);
+        }
+        if(result.contains("3")) {
+            result.setTextNumber("Fizz");
         }
 
         return result;
