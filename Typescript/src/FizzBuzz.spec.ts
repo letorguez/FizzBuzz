@@ -12,4 +12,9 @@ describe('FizzBuzz', () => {
         expect(fizzBuzz.checkNumbers([9])).toStrictEqual(['Fizz']);
         expect(fizzBuzz.checkNumbers([33])).toStrictEqual(['Fizz']);
     })
+    it('should return a Buzz', () => {
+        expect(fizzBuzz.checkNumbers([5])).toStrictEqual(['Buzz']);
+        expect(fizzBuzz.checkNumbers([10])).toStrictEqual(['Buzz']);
+        expect(fizzBuzz.checkNumbers([50])).toStrictEqual(['Buzz']);
+    })
 })
