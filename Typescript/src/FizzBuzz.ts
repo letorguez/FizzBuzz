@@ -1,10 +1,13 @@
 export class FizzBuzz {
-    public checkNumbers (numbers: number[]): string[] {
+  public checkNumbers(numbers: number[]): string[] {
+    let result: string[] = numbers.map((number) => {
+      let numberResult: string = number.toString();
+      if(number % 3 === 0) {
+        numberResult = 'Fizz';
+      }
+      return numberResult;
+    });
 
-        let result: string[] = numbers.map(number => {
-            return number.toString();
-        })
-        
-        return result;
-    }
+    return result;
+  }
 }
