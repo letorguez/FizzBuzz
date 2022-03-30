@@ -17,4 +17,9 @@ describe('FizzBuzz', () => {
         expect(fizzBuzz.checkNumbers([10])).toStrictEqual(['Buzz']);
         expect(fizzBuzz.checkNumbers([50])).toStrictEqual(['Buzz']);
     })
+    it('should return a FizzBuzz', () => {
+        expect(fizzBuzz.checkNumbers([15])).toStrictEqual(['FizzBuzz']);
+        expect(fizzBuzz.checkNumbers([30])).toStrictEqual(['FizzBuzz']);
+        expect(fizzBuzz.checkNumbers([45])).toStrictEqual(['FizzBuzz']);
+    })
 })
