@@ -1,5 +1,8 @@
 export class FizzBuzz {
-  public checkNumbers(numbers: number[]): string[] {
+  public static checkNumbers(numbers: number[]) {
+    if (numbers.some((number) => number > 100 || number < 0)) {
+      return "They can only be numbers between 0 and 100";
+    }
     let result: string[] = numbers.map((number) => {
       let numberResult: string = "";
       if (number % 3 === 0) {
@@ -10,7 +13,6 @@ export class FizzBuzz {
       }
       return numberResult != "" ? numberResult : number.toString();
     });
-
     return result;
   }
 }
