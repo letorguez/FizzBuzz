@@ -5,6 +5,9 @@ export class FizzBuzz {
       if(number % 3 === 0) {
         numberResult = 'Fizz';
       }
+      if(number % 5 === 0) {
+        numberResult = 'Buzz';
+      }
       return numberResult;
     });
 
